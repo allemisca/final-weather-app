@@ -5,6 +5,7 @@
 }
 .weather-app {
   background-color: #fff;
+  border-radius: 16px;
   padding: 40px;
   margin: 60px auto;
 }
@@ -22,6 +23,9 @@
   font-weight: 400;
   font-weight: 700;
   font-size: 80px;
+}
+.temp {
+  text-align: right;
 }
 .unit {
   color: #212121;
