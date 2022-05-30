@@ -10,28 +10,39 @@
       rel="stylesheet"
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
-    <link rel="stylesheet" href="src/style.css" />
-      />
+    />
+    <link rel="stylesheet" href="src/style.css">
   </head>
   <body>
     <div class="container">
+      <div class="weather-app">
       <div class="row">
-        <div class="col-10">
+        <div class="col-6">
       <h1>New York</h1>
-      <p>
-        <div>
+        <div class="day">
         Monday 11:30, clear sky
         </div>
-        <div> Humidity: 82%, Wind: 1.54km/h </div>
-      </p>
+        <div class="conditions"> Humidity: <span class="humidity">82% </span>, Wind: <span class="wind">1.54km/h </span> </div>
       </div>
     
-      <div class="col-2">
+      <div class="col-6 temp">
+        <span class="image">
         🌤
-        17°C
+        </span>
+        <span class="number">
+        17</span>
+        <span class="unit">
+        °C
+        </span>
       </div>
       </div>
       <script src="src/script.js"></script>
+      </div>
+      <div class="footer">
+      <a href="https://github.com/allemisca/final-weather-app">Open-source code</a>
+         by Alexandra Misca
+      </div>
+    </div>
     </div>
   </body>
 </html>
