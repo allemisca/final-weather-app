@@ -1,5 +1,4 @@
 function showTemperature(response) {
-  console.log(response.data);
   let temp = document.querySelector(".number");
   let city = document.querySelector("#city");
   let description = document.querySelector("#description");
@@ -12,7 +11,8 @@ function showTemperature(response) {
   humidity.innerHTML = response.data.main.humidity;
 }
 
+let city = "Paris";
 let apiKey = "f07a94241e107c627fab3534ea3f2313";
-let aipUrl = `https://api.openweathermap.org/data/2.5/weather?q=New York&appid=${apiKey}&units=metric`;
+let aipUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 axios.get(aipUrl).then(showTemperature);
