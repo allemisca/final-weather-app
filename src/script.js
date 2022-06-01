@@ -28,12 +28,18 @@ function showTemperature(response) {
   let wind = document.querySelector("#wind-number");
   let humidity = document.querySelector("#humidity-number");
   let date = document.querySelector("#date");
+  let icon = document.querySelector("#icon");
   temp.innerHTML = Math.round(response.data.main.temp);
   city.innerHTML = response.data.name;
   description.innerHTML = response.data.weather[0].description;
   wind.innerHTML = Math.round(response.data.wind.speed);
   humidity.innerHTML = response.data.main.humidity;
   date.innerHTML = showDate(response.data.dt * 1000);
+  icon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  icon.setAttribute("alt", response.data.weather[0].description);
 }
 
 let city = "Paris";
