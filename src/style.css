@@ -33,10 +33,10 @@
 }
 .unit {
   color: #212121;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 400;
   position: relative;
-  top: -34px;
+  top: -40px;
 }
 .day,
 .conditions,
