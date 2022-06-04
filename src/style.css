@@ -77,6 +77,10 @@
   opacity: 0.6;
 }
 
+#forecast-image {
+  width: 60px;
+}
+
 h1 {
   color: #272142;
   font-weight: 700;
